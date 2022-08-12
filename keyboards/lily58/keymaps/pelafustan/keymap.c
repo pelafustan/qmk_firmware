@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     LT(_NUMPAD, KC_TAB), KC_Q, KC_W, KC_E, KC_R, KC_T,                   KC_Y, KC_U, KC_I,    KC_O,    KC_P,    KC_BSPC, 
     LSFT_T(KC_ESC),      KC_A, KC_S, KC_D, KC_F, KC_G,                   KC_H, KC_J, KC_K,    KC_L,    KC_SCLN, RSFT_T(KC_QUOT), 
     KC_LCTRL,            KC_Z, KC_X, KC_C, KC_V, KC_B, KC_LCBR, KC_RCBR, KC_N, KC_M, KC_COMM, KC_DOT,  KC_SLSH, RCTL_T(KC_BSLS), 
-                KC_LALT, KC_LGUI, LT(_LOWER, KC_LBRC), KC_SPC,  KC_ENT,  LT(_RAISE, KC_RBRC), KC_RALT, KC_APP
+                KC_LALT, KC_LGUI, LT(_LOWER, KC_LBRC), KC_SPC,  KC_ENT,  LT(_RAISE, KC_RBRC), KC_RALT, RGUI_T(KC_APP)
   ),
   /* LOWER
    * ,-----------------------------------------.                    ,-----------------------------------------.
@@ -70,18 +70,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
-    KC_GRV,  KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_5,                      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BSPC,
-    KC_DEL,  KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_APP,                    KC_F6,   KC_MINS, KC_EQL,  KC_PGUP, KC_PGDN, KC_BSLS,
-    KC_CAPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F11,  _______, _______, KC_F12,  KC_LCTL, KC_LSFT, KC_LALT, KC_LGUI, _______,
+    KC_GRV,  KC_F9,   KC_F10,  KC_F11,  KC_F12,  XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DEL,  KC_BSPC,
+    _______, KC_F5,   KC_F6,   KC_F7,   KC_F8,   XXXXXXX,                   XXXXXXX, KC_MINS, KC_EQL,  KC_PGUP, KC_PGDN, KC_BSLS,
+    KC_CAPS, KC_F1,   KC_F2,   KC_F3,   KC_F4,   XXXXXXX, _______, _______, XXXXXXX, KC_LCTL, KC_LSFT, KC_LALT, KC_LGUI, _______,
                                _______, _______, _______, _______, _______, _______, _______, _______
   ),
 
   [_NUMPAD] = LAYOUT(
-    XXXXXXX, KC_BSPC, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, 
     XXXXXXX, KC_LCTL, KC_LSFT, KC_LALT, XXXXXXX, XXXXXXX,                   XXXXXXX, KC_7,    KC_8,    KC_9,    KC_PAST, KC_PSLS, 
-    XXXXXXX, KC_LPRN, KC_RPRN, KC_DEL , XXXXXXX, XXXXXXX,                   XXXXXXX, KC_4,    KC_5,    KC_6,    KC_PPLS, KC_PMNS,
+    XXXXXXX, KC_LPRN, KC_RPRN, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, KC_4,    KC_5,    KC_6,    KC_PPLS, KC_PMNS,
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_1,    KC_2,    KC_3,    KC_TAB,  KC_ENT,
-                               _______, _______, _______, _______, _______, KC_0,    KC_DOT,  _______
+                               _______, _______, _______, KC_DEL , KC_BSPC, KC_0,    KC_DOT,  _______
   ),
   /* ADJUST
    * ,-----------------------------------------.                    ,-----------------------------------------.
