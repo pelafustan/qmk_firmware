@@ -49,8 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_QWERTY] = LAYOUT_planck_mit(
   LT(_NUM, KC_TAB), KC_Q,    KC_W,    KC_E,    KC_R,                KC_T,    KC_Y,  KC_U,                KC_I,     KC_O,    KC_P,    KC_BSPC,
-  TD(TD_ESC_GR),    KC_A,    KC_S,    KC_D,    KC_F,                KC_G,    KC_H,  KC_J,                KC_K,     KC_L,    KC_SCLN, KC_ENT,
-  KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,                KC_B,    KC_N,  KC_M,                KC_COMM,  KC_DOT,  KC_SLSH, RSFT_T(KC_QUOT),
+  LSFT(KC_TILD),    KC_A,    KC_S,    KC_D,    KC_F,                KC_G,    KC_H,  KC_J,                KC_K,     KC_L,    KC_SCLN, KC_ENT,
+  LSFT_T(KC_ESC),   KC_Z,    KC_X,    KC_C,    KC_V,                KC_B,    KC_N,  KC_M,                KC_COMM,  KC_DOT,  KC_SLSH, RSFT_T(KC_QUOT),
   RGB_TOG,          KC_LCTL, KC_LALT, KC_LGUI, LT(_LOWER, KC_LBRC),     KC_SPC,     LT(_RAISE, KC_RBRC), KC_RALT,  KC_PSCR, KC_RCTL, KC_BSLS
 ),
 
@@ -66,8 +66,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_planck_mit(
-  KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_CIRC, KC_AMPR, KC_LPRN,  KC_RPRN, KC_DEL,
-  KC_DEL,  KC_LCTL, KC_LSFT, KC_LALT, KC_F4,   XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, _______, _______,
+  KC_DEL,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_CIRC, KC_AMPR, KC_LPRN,  KC_RPRN, KC_DEL,
+  KC_TILD, KC_LCTL, KC_LSFT, KC_LALT, KC_F4,   XXXXXXX, KC_LEFT, KC_DOWN, KC_UP,   KC_RIGHT, _______, _______,
   _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_LCBR, XXXXXXX, XXXXXXX, KC_RCBR, KC_HOME, KC_END,   _______, _______,
   _______, _______, _______, _______, _______,      _______,     _______, KC_MNXT, KC_VOLD,  KC_VOLU, KC_MPLY
 ),
